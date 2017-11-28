@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AgendaAPS.Model.Menu" Title="Menu">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout HeightRequest="150" BackgroundColor="Blue">
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Label Text="Desejos Desejados" TextColor="Blue" FontSize="22"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout>
+                <Button Text="Desejo" Clicked="Button_OnClicked"/>
+                <Label Text="Desejo"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

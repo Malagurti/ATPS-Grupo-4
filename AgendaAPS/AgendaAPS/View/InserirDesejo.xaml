@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AgendaAPS.Model.inserirDesejo">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label Text="Inserir Desejo"/>
+                <Entry Placeholder="Produto" Text="{Binding Desejo.Produto}"/>
+            </StackLayout>
+            <StackLayout>
+                <Entry Placeholder="Catergoria" Text="{Binding Desejo.Catergoria}"/>
+            </StackLayout>
+            <StackLayout>
+                <Entry Placeholder="Codigo" Text="{Binding Desejo.Codigo}"/>
+            </StackLayout>
+            <StackLayout>
+                <Entry Placeholder="Loja" Text="{Binding Desejo.Loja}"/>
+            </StackLayout>
+            <StackLayout>
+                <Entry Placeholder="Preco" Text="{Binding Desejo.Preco}"/>
+            </StackLayout>
+            <StackLayout>
+                <Entry Placeholder="Descrição" Text="{Binding Desejo.Descricao}"/>
+            </StackLayout>
+            <StackLayout>
+                <DatePicker x:Key="txtData" Date="{Binding Conta.Data}">
+                    <DatePicker.Format>dd/MM/yyyy</DatePicker.Format>
+                </DatePicker>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
